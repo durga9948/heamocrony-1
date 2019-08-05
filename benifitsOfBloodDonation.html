@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Benifits of Blood Donation</title>
+	<style>
+		.div{
+			margin:55px;
+			padding: 20px;
+		}
+		h3{
+			font-size: 25px;
+			font-style: bold;
+			color: red;
+		}
+		h4{
+			font-size: 20px;
+			font-style: bold;
+			color:brown;
+		}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+  border:5px solid white;
+  padding-top: 30px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 50px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+	
+</head>
+<body>
+	<marquee style="font-size: 20px;color:brown;">Donate blood save life</marquee>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="bd1.png" style="width:100%">
+  <div class="text">Donate blood save life</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="bd2.jpg" style="width:100%">
+  <div class="text">Donate blood save life</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="bd3.png" style="width:100%">
+  <div class="text">Donate blood save life</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<style>
+	.container{
+
+		 display: grid;
+ 			 grid-template-columns: auto auto auto;
+	}
+	.item1{
+				border-width: 5px solid black;
+				background-color: silver;
+	}
+	.item2{
+		border:2px solid white;
+		padding: 2px 30px 30px 30px;
+	}
+</style>
+
+	<div class="container">
+		<div class="item1"></div>
+		<div class=item2>
+		<h3>Benifits of BloodDonation</h3>
+		
+			<h4>1. Giving blood can reveal potential health problems</h4>
+			<p>While it isn’t the same thing as a trip to the doctor, donating blood can be another way to keep an eye on your cardiovascular health. You’ll receive a mini-physical prior to the blood draw, in which someone will check your pulse, blood pressure, body temperature, hemoglobin and more.  This can sometimes shed light on issues you didn’t even know about.</p>
+		
+		
+			<h4>2. Giving blood can reduce harmful iron stores</h4>
+			<p>A committed blood donor herself, Patenaude recommends donation as a way to reduce the body’s extra iron stores. The Centers for Disease Control and Prevention says the removal of red blood cells by phlebotomy (or donating blood) is the preferred treatment for patients with excess iron in their blood.</p>
+		
+		
+			<h4>3. Giving blood may lower your risk of suffering a heart attack</h4>
+			<p>Donating blood at least once a year could reduce your risk of a heart attack by 88 percent, according to a study conducted by the American Journal of Epidemiology.* This relates to the iron issue again, says Dr. David Dragoo, healthcare expert at Money Crashers.
+			<br>
+			Dr. Dragoo explains that high levels of iron in the blood constrict your blood vessels and create more risk of a heart attack. Depleting those extra iron deposits by donating blood gives your vessels more room to operate.</p>
+		
+		
+			<h4>4. Giving blood may reduce your risk of developing cancer</h4>
+			<p>In an average, completely healthy person, the link between giving blood and decreased cancer risk is slim. But research does support a reduced risk of cancer for blood donors with different maladies, one of which is hemochromatosis.
+			<br>
+			Phlebotomy (the process of drawing blood) was found to be an iron-reduction method that is associated with lower cancer risk and mortality, according to a study published by the Journal of the National Cancer Institute. The study focused on patients affected by peripheral arterial disease (PAD), which the Mayo Clinic describes as a common circulatory problem. PAD patients who regularly donated blood had a lower risk of developing cancer than those who did not.</p>
+		
+			<h4>5. Giving blood can help your liver stay healthy</h4>
+			<p>Another danger of iron overload is the health of your liver. “In recent years, nonalcoholic fatty liver disease (NAFLD), the hepatic expression of metabolic syndrome, has reached epidemic proportions,” reports the National Center for Biotechnology Information.
+			<br>
+			Research has linked too much iron with NAFLD, Hepatitis C and other liver diseases and infections. Though there are many other factors involved in these problems, donating blood can help relieve some of those iron stores and avoid extra issues in your liver.</p>
+		
+			<h4>6. Giving blood can help your mental state</h4>
+			<p>While there are several physical benefits to donating blood, the most powerful health benefit is arguably in the psychological realm. Donating blood means that someone (or multiple people) somewhere will be getting the help they desperately need.
+			<br>
+			Donating blood, especially on a regular basis, can be similar to volunteer work. You give of your time (and your literal blood) to help strangers in need. If you go to specific blood donation location each time, you’ll get to know some of the staff who are also dedicating themselves to the cause of saving lives.
+			<br>
+			This kind of regular, altruistic interaction has major psychological benefits. Getting out of your usual environment to do something good for someone else is stimulating in the best kind of way.  Volunteering has been shown to have positive effects on happiness. In people over 65-years-old, volunteering also reduces the risk of depression and loneliness.
+			<br>
+			Patenaude believes the psychological health benefit you receive from knowing you’re helping others is just as helpful as the physical health benefit. When you roll up your sleeve and sit down in that chair, you know you’re making a difference—and that makes you feel good!</p>
+			</div>
+	<div class="item1"></div>
+	</div>
+</body>
+</html>
